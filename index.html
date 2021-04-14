@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>image editor</title>
+</head>
+<body>
+    <h1>IMAGE EDITOR</h1>
+    <section class="main">
+        <div class="container">
+            <div class="container1">
+                <div class="main-left">
+                    <aside>
+                        <h3>Effects</h3>
+        <form id="slider-form">
+                            <p>
+            <label for="gs">Grayscale</label>
+        <input id="gs" name="gs" type="range" min="" max="100" value="0" class="slider">
+        </p>
+                        
+         <p>
+              <label for="blur">Blur</label>
+             <input id="blur" name="blur" type="range" min="0" max="" value="0" class="slider">
+                </p>
+
+                 <p>
+                <label for="hue-rotate">Hue-Rotate</label>
+              <input id="hue-rotate" name="hue-rotate" type="range" min="0" max="" value="0" class="slider">
+                </p>
+
+                <p>
+                     <label for="sepia">Sepia</label>
+                 <input id="sepia" name="sepia" type="range" min="0" max="" value="0" class="slider">
+               </p>
+                <p>
+                    <label for="invert">Invert</label>
+                 <input id="invert" name="invert" type="range" min="0" max="" value="0" class="slider">
+                  </p>
+                 <p>
+                    <label for="saturation">Saturation</label>
+                  <input id="saturation" name="saturation" type="range" min="0" max="" value="0" class="slider">
+                  </p>
+                  <p>
+                      <label for="exposure">Exposure</label>
+                 <input id="exposure" name="exposure" type="range" min="0" max="" value="0" class="slider">
+                    </p>
+                            
+                            
+                 <button type="reset" >Original</button>
+            </form>
+                    </aside>
+                </div>
+                <div class="main-right">
+                    <div class="img-area">
+                        <img src="images/background1.jpg" id="targetimage" alt="">
+                    </div>
+                    <br>
+                    <form id="myform">
+                        <input type="text" placeholder="Image URL" id="onlineurl">
+                        <button type="submit">Lets Go</button>
+                    </form>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
